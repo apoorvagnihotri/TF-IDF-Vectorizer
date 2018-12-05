@@ -3,6 +3,8 @@ In this project, I have made a toy GUI that calculates the TF-IDF vector of a se
 
 The Idea is to provide the application with a preprocessed text file that it will open and then train the TF-IDF model internally. The application uses sklearns's implementation of TF-IDF vectorizer to train and then askes for a sentence (again preprocessed) to be provided, on which it runs the trained TF-IDF model. It then outputs the TF-IDF vector with the corresponding weights.
 
+**NOTE:** The input file and the sentence need to be preprocessed in advanced.
+
 ---
 
 # Requirements
@@ -20,9 +22,10 @@ The TF-IDF vectorizer method works by denoting each word in a sentence by a numb
 
 **TF - term frequency**
 
+<img src="https://latex.codecogs.com/gif.latex?f_{t,d} =\text { # of times the word } t \text { appears in the document } d" /> 
 $$f_{t,d} = $$ # of times the word $t$ appears in the document $d$.
 
-$$f_{t^`, d} = $$ total number of tokens in document $d$. 
+$$f_{t^o, d} = $$ total number of tokens in document $d$. 
 
 $$ \boxed{tf_t = \frac{f_{t,d}}{\Sigma{}{}}}$$
 
@@ -56,11 +59,6 @@ The python program then asks for an input sentence (again normalized).
 The program takes in this sentence and transforms it into TF-IDF space and returns by a popping up a popup what shows the TF-IDF vector of the sentence provided.
 
 ![Popup](https://i.imgur.com/UtDC8zx.png)
-
----
-
-# Limitations
-The input file to train the program should be normalized and preprocessed.
 
 ---
 
