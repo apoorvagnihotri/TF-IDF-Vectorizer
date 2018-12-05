@@ -65,6 +65,6 @@ The program takes in this sentence and transforms it into TF-IDF space and retur
 
 # Disclosure
 I have cited the code that I have reused from a source.
-[1](pythonspot.com), [2](https://www.commonlounge.com/discussion/99e86c9c15bb4d23a30b111b23e7b7b1)
+[1](https://pythonspot.com/pyqt5-textbox-example/), [2](https://www.commonlounge.com/discussion/99e86c9c15bb4d23a30b111b23e7b7b1)
 
 ---
