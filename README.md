@@ -37,7 +37,8 @@ $$a = \text{# of docs}$$
 $$b_t = 1 + \text{# of docs having word } t$$ 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\boxed{idf_t&space;=&space;log&space;\left(&space;\frac{a}{b_t}\right)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boxed{idf_t&space;=&space;log&space;\left(&space;\frac{a}{b_t}\right)}" title="\boxed{idf_t = log \left( \frac{a}{b_t}\right)}" /></a>
-$$ \boxed{idf_t = log \left( \frac{a}{b_t}\right)}$$
+
+[comment]: <> ($$ \boxed{idf_t = log \left( \frac{a}{b_t}\right)} $$)
 
 We multiply these numbers together to find the final number for each of the word. The vector representing the sentence is now a collection of these numbers. This is how we find the TF-IDF vector.
 
