@@ -21,24 +21,19 @@ pyqt             5.9.6
 The TF-IDF vectorizer method works by denoting each word in a sentence by a number. This number incorporates important parameters such as **frequency** and **uniqueness**.
 
 **TF - term frequency**
+<a href="https://www.codecogs.com/eqnedit.php?latex=f_{t,d}&space;=&space;\text{&hash;&space;of&space;times&space;the&space;word&space;}&space;t&space;\text{appears&space;in&space;the&space;document&space;}&space;d" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{t,d}&space;=&space;\text{&hash;&space;of&space;times&space;the&space;word&space;}&space;t&space;\text{appears&space;in&space;the&space;document&space;}&space;d" title="f_{t,d} = \text{# of times the word } t \text{appears in the document } d" /></a>
 
-$$f_{t,d} = \text{# of times the word } t \text{appears in the document } d$$.
+<a href="https://www.codecogs.com/eqnedit.php?latex=f_{t^o,&space;d}&space;=&space;\text{total&space;number&space;of&space;tokens&space;in&space;document}&space;d" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{t^o,&space;d}&space;=&space;\text{total&space;number&space;of&space;tokens&space;in&space;document}&space;d" title="f_{t^o, d} = \text{total number of tokens in document} d" /></a>
 
-$$f_{t^o, d} = \text{total number of tokens in document} d$$. 
-
-$$ \boxed{tf_t = \frac{f_{t,d}}{\Sigma{}{}}}$$
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=\boxed{tf_t&space;=&space;\frac{f_{t,d}}{\Sigma{}{}}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boxed{tf_t&space;=&space;\frac{f_{t,d}}{\Sigma{}{}}}" title="\boxed{tf_t = \frac{f_{t,d}}{\Sigma{}{}}}" /></a>
 
 
 **IDF - inverse document frequency**
+<a href="https://www.codecogs.com/eqnedit.php?latex=a&space;=&space;\text{&hash;&space;of&space;docs}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a&space;=&space;\text{&hash;&space;of&space;docs}" title="a = \text{# of docs}" /></a>
 
-$$a = \text{# of docs}$$
-
-$$b_t = 1 + \text{# of docs having word } t$$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=b_t&space;=&space;1&space;&plus;&space;\text{&hash;&space;of&space;docs&space;having&space;word&space;}&space;t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_t&space;=&space;1&space;&plus;&space;\text{&hash;&space;of&space;docs&space;having&space;word&space;}&space;t" title="b_t = 1 + \text{# of docs having word } t" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\boxed{idf_t&space;=&space;log&space;\left(&space;\frac{a}{b_t}\right)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boxed{idf_t&space;=&space;log&space;\left(&space;\frac{a}{b_t}\right)}" title="\boxed{idf_t = log \left( \frac{a}{b_t}\right)}" /></a>
-
-[comment]: <> ($$ \boxed{idf_t = log \left( \frac{a}{b_t}\right)} $$)
 
 We multiply these numbers together to find the final number for each of the word. The vector representing the sentence is now a collection of these numbers. This is how we find the TF-IDF vector.
 
