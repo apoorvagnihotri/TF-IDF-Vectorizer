@@ -22,10 +22,9 @@ The TF-IDF vectorizer method works by denoting each word in a sentence by a numb
 
 **TF - term frequency**
 
-<img src="https://latex.codecogs.com/gif.latex?f_{t,d} =\text { # of times the word } t \text { appears in the document } d" /> 
-$$f_{t,d} = $$ # of times the word $t$ appears in the document $d$.
+$$f_{t,d} = \text{# of times the word } t \text{appears in the document } d$$.
 
-$$f_{t^o, d} = $$ total number of tokens in document $d$. 
+$$f_{t^o, d} = \text{total number of tokens in document} d$$. 
 
 $$ \boxed{tf_t = \frac{f_{t,d}}{\Sigma{}{}}}$$
 
@@ -33,13 +32,12 @@ $$ \boxed{tf_t = \frac{f_{t,d}}{\Sigma{}{}}}$$
 
 **IDF - inverse document frequency**
 
-$a =$ # of docs
+$$a = \text{# of docs}$$
 
-$b_t =$ 1 + # of docs having word $t$ 
+$$b_t = 1 + \text{# of docs having word } t$$ 
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\boxed{idf_t&space;=&space;log&space;\left(&space;\frac{a}{b_t}\right)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boxed{idf_t&space;=&space;log&space;\left(&space;\frac{a}{b_t}\right)}" title="\boxed{idf_t = log \left( \frac{a}{b_t}\right)}" /></a>
 $$ \boxed{idf_t = log \left( \frac{a}{b_t}\right)}$$
-
-
 
 We multiply these numbers together to find the final number for each of the word. The vector representing the sentence is now a collection of these numbers. This is how we find the TF-IDF vector.
 
